@@ -1,4 +1,4 @@
-# local-pkg
+# locale-pkg
 
 Get information on local packages. Works on both CJS and ESM.
 
