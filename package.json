@@ -1,0 +1,78 @@
+{
+  "name": "local-pkg",
+  "type": "module",
+  "version": "0.0.3",
+  "packageManager": "pnpm@7.9.5",
+  "description": "Starter template for TypeScript library",
+  "author": "Joruno-w <1710642275@qq.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/Joruno-w",
+  "homepage": "https://github.com/Joruno-w/local-pkg#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joruno-w/local-pkg.git"
+  },
+  "bugs": "https://github.com/Joruno-w/local-pkg/issues",
+  "keywords": [
+    "pkg",
+    "package",
+    "search",
+    "resolve",
+    "path"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild && esno ./scripts/postbuild.ts",
+    "lint": "eslint .",
+    "prepublishOnly": "nr build",
+    "release": "bumpp && npm publish",
+    "start": "esno src/index.ts",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.38.4",
+    "@types/node": "^18.15.11",
+    "bumpp": "^9.1.0",
+    "eslint": "^8.37.0",
+    "esno": "^0.16.3",
+    "find-up": "^6.3.0",
+    "lint-staged": "^13.2.0",
+    "pnpm": "^8.1.1",
+    "rimraf": "^4.4.1",
+    "simple-git-hooks": "^2.8.1",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.3",
+    "unbuild": "^1.2.1",
+    "vite": "^4.2.1",
+    "vitest": "^0.29.8"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
