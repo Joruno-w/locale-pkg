@@ -1,4 +1,5 @@
 # locale-pkg
+[![NPM version](https://img.shields.io/npm/v/locale-pkg?color=a1b858&label=)](https://www.npmjs.com/package/locale-pkg)
 
 Get information on local packages. Works on both CJS and ESM.
 

@@ -48,7 +48,7 @@
     "build": "unbuild && esno ./scripts/postbuild.ts",
     "lint": "eslint .",
     "prepublishOnly": "nr build",
-    "release": "bumpp && git push && npm publish",
+    "release": "bumpp && npm publish",
     "start": "esno src/index.ts",
     "test": "vitest",
     "typecheck": "tsc --noEmit"
