@@ -6,7 +6,7 @@ Get information on local packages. Works on both CJS and ESM.
 ## Install
 
 ```bash
-npm i local-pkg
+npm i locale-pkg
 ```
 
 ## Usage
@@ -17,12 +17,12 @@ import {
   importModule,
   isPackageExists,
   resolveModule,
-} from 'local-pkg'
+} from 'locale-pkg'
 
-isPackageExists('local-pkg') // true
+isPackageExists('locale-pkg') // true
 isPackageExists('foo') // false
 
-await getPackageInfo('local-pkg')
+await getPackageInfo('locale-pkg')
 /* {
  *   name: "local-pkg",
  *   version: "0.1.0",
@@ -34,11 +34,11 @@ await getPackageInfo('local-pkg')
  */
 
 // similar to `require.resolve` but works also in ESM
-resolveModule('local-pkg')
+resolveModule('locale-pkg')
 // '/path/to/node_modules/local-pkg/dist/index.cjs'
 
 // similar to `await import()` but works also in CJS
-const { importModule } = await importModule('local-pkg')
+const { importModule } = await importModule('locale-pkg')
 ```
 ## License
 

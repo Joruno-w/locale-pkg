@@ -7,12 +7,12 @@
   "author": "Joruno-w",
   "license": "MIT",
   "funding": "https://github.com/sponsors/Joruno-w",
-  "homepage": "https://github.com/Joruno-w/local-pkg#readme",
+  "homepage": "https://github.com/Joruno-w/locale-pkg#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Joruno-w/local-pkg.git"
+    "url": "git+https://github.com/Joruno-w/locale-pkg.git"
   },
-  "bugs": "https://github.com/Joruno-w/local-pkg/issues",
+  "bugs": "https://github.com/Joruno-w/locale-pkg/issues",
   "keywords": [
     "pkg",
     "package",
