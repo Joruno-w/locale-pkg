@@ -24,9 +24,9 @@ isPackageExists('foo') // false
 
 await getPackageInfo('locale-pkg')
 /* {
- *   name: "local-pkg",
+ *   name: "locale-pkg",
  *   version: "0.1.0",
- *   rootPath: "/path/to/node_modules/local-pkg",
+ *   rootPath: "/path/to/node_modules/locale-pkg",
  *   packageJson: {
  *     ...
  *   }
